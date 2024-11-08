@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Projeto Ciartec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerMain">
+        <div class="headerSub">
+            <img src="img/Rectangle 6.png" alt="Logo">
+            <h1>PROJETO CIARTEC</h1>
+        </div>
+        <div class="infoMain">
+            <ul class="infoList">
+                <li><a href="#nossaSala">Nossa Sala</a></li>
+                <li><a href="#nossoProjeto">Nosso Projeto</a></li>
+            </ul>
+        </div>
+        <div class="headerSub2">
+           <img src="img/image-removebg-preview (3).png" alt="ParnaibaMaker">
+        </div>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <img src="img/Rectangle7.png" alt="">
+            <div class="infoBanner">
+                <h1>BRINCADEIRAS SUSTENTÁVEIS</h1>
+                <h2>Os Sonhos Nos Mantém Vivos!</h2>
+            </div>
+        </div>
+    </main>
+        
+    <section class="brincadeiras" id="nossoProjeto">
+            <h2>Lista de Brincadeiras</h2>
+            <div class="selectContainer">
+                <select id="brincadeiraSelect" onchange="mostrarBrincadeiraSelecionada()">
+                    <option value="" disabled selected>Selecione uma brincadeira</option>
+                    <option value="brincadeira1">Lencinho Branco</option>
+                    <option value="brincadeira2">Pararaparati</option>
+                    <option value="brincadeira3">Passa Anel</option>
+                    <option value="brincadeira4">Pato Pato Ganso</option>
+                    <option value="brincadeira5">Pega Pega Gelo</option>
+                    <option value="brincadeira6">Quem Sou Eu</option>
+                    <option value="brincadeira7">Telefone Sem Fio</option>
+                </select>
+            </div>
+    </section>
+        
+        
+    
+    <div id="detalhesBrincadeira" style="display:none;">
+        <div class="container-brincadeira">
+            <div class="info-brincadeira">
+                <h2 id="tituloBrincadeira"></h2>
+                <p id="descricaoBrincadeira"></p>
+            </div>
+            <div class="video-brincadeira">
+                <video id="videoBrincadeira" width="320" height="240" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+            </div>
+        </div>
+        <button class="btn-fechar" onclick="fecharDetalhes()">&#10006;</button>
+    </div>
+    
+    <section class="hero" id="nossaSala">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Nossa Sala: </h1>
+            <p>4ºAno A 2024 - Escola Senador Teotônio Vilela </p>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
